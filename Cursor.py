@@ -1,11 +1,17 @@
+import sys
 import random
 import time
 import pyautogui as screen
-
-while True: 
+import keyboard
+while True:
+    if keyboard.is_pressed('Esc'):
+        sys.exit()
     x= random.randint(600,700)
     y=random.randint(200,600)
     screen.moveTo(x,y,0.5)
-    time.sleep(1)
-#making a stop thing
-      
+    time.sleep(3)
+
+   
+    
+
+ 
